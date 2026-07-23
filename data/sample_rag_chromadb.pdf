@@ -1,0 +1,94 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2399 >>
+stream
+BT
+/F1 20 Tf
+72 735 Td
+(RAG Knowledge Base: ChromaDB PDF Sample) Tj
+/F1 11 Tf
+0 -36 Td
+(Retrieval augmented generation, usually called RAG, helps an application answer) Tj
+0 -15 Td
+(questions by searching a trusted knowledge base before producing a response. Instead of) Tj
+0 -15 Td
+(asking a language model to rely only on its training data, the application retrieves) Tj
+0 -15 Td
+(relevant context and sends that context with the user's question.) Tj
+0 -15 Td
+0 -9 Td
+(A typical PDF ingestion pipeline has four steps. First, the document loader extracts) Tj
+0 -15 Td
+(readable text from each PDF page. Second, the text splitter breaks long page text into) Tj
+0 -15 Td
+(smaller overlapping chunks. Third, an embedding model converts every chunk into a) Tj
+0 -15 Td
+(numeric vector. Fourth, ChromaDB stores the vectors, the original chunk text, and) Tj
+0 -15 Td
+(metadata such as source file, page number, and chunk id.) Tj
+0 -15 Td
+0 -9 Td
+(Chunk size matters because it controls how much context each retrieved result contains.) Tj
+0 -15 Td
+(Chunks that are too small may lose important details. Chunks that are too large may mix) Tj
+0 -15 Td
+(unrelated topics and reduce retrieval quality. A common starting point is 500 to 1,000) Tj
+0 -15 Td
+(characters with 50 to 150 characters of overlap.) Tj
+0 -15 Td
+0 -9 Td
+(Metadata makes the vector database easier to use. For PDF content, useful metadata) Tj
+0 -15 Td
+(includes document name, page number, section title, creation date, and data owner. When) Tj
+0 -15 Td
+(the application returns an answer, metadata can be used to show citations so the user) Tj
+0 -15 Td
+(can verify where the information came from.) Tj
+0 -15 Td
+0 -9 Td
+(ChromaDB can run locally for development and persist data to a folder on disk. A) Tj
+0 -15 Td
+(collection is similar to a table for embeddings. Each collection contains ids,) Tj
+0 -15 Td
+(documents, embeddings, and optional metadata. During a query, ChromaDB embeds the search) Tj
+0 -15 Td
+(text, compares it with stored vectors, and returns the nearest chunks.) Tj
+0 -15 Td
+0 -9 Td
+(This sample document is intentionally small but realistic. It contains enough) Tj
+0 -15 Td
+(information to test PDF loading, text chunking, embedding creation, persistence, and) Tj
+0 -15 Td
+(similarity search. A good first query after ingestion is: What metadata should I store) Tj
+0 -15 Td
+(for PDF chunks?) Tj
+0 -15 Td
+0 -9 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002691 00000 n 
+trailer
+<< /Root 1 0 R /Size 6 >>
+startxref
+2761
+%%EOF
